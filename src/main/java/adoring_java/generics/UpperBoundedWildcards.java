@@ -19,6 +19,10 @@ public class UpperBoundedWildcards {
         public void setOb(T ob) {
             this.ob = ob;
         }
+
+        public void outBox(Box<? extends T> box) {
+
+        }
     }
 
     static class Toy {
@@ -40,7 +44,7 @@ public class UpperBoundedWildcards {
     }
 
     public static void outBox(Box<? extends Toy> box) {
-        box.getOb();
+        Car ob = (Car) box.getOb();
 // required type이 ? extends Toy 라고 컴파일 오류 뜬다.
 //        box.setOb(new Toy());
     }
