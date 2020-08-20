@@ -1,6 +1,9 @@
 package effectiveJava;
 
 import java.math.BigInteger;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 public class StaticInitializationBlock {
 
@@ -23,6 +26,19 @@ public class StaticInitializationBlock {
 
         BigInteger bi = BigInteger.valueOf(0);
         System.out.println(bi);
+
+
+        Map<String, String> map = new HashMap<>();
+        map.put("1", "111");
+        map.put("2", "222");
+        map.put("3", "333");
+
+        Set<String> strings1 = map.keySet();
+        Set<String> strings2 = map.keySet();
+        Set<String> strings3 = map.keySet();
+
+        strings1.remove("1");
+
     }
 
 }
