@@ -1,7 +1,6 @@
 package effectiveJava;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 // 코드 26-4 런타임에 실패한다. - unsafeAdd 메서드가 로 타입(List)을 사용 (156-157쪽)
