@@ -4,7 +4,7 @@ public interface A {
 
     void test1A();
 
-    static void test2A() {
+    default void test2A() {
         System.out.println("test2A()");
     }
 
