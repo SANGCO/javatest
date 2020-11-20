@@ -1,5 +1,7 @@
 package jdbc;
 
+import java.util.Arrays;
+
 public class JDBCExam1 {
 
     public static void main(String[] args) {
