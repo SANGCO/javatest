@@ -22,7 +22,6 @@ public class MathRandom {
             test = test - test2;
             System.out.println("후" + test);
         }
-
     }
 
 }
