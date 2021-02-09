@@ -1,17 +1,28 @@
 package test;
 
 import java.math.BigInteger;
+import java.text.DecimalFormat;
+import java.text.Format;
+import java.text.NumberFormat;
 import java.util.LinkedList;
+import java.util.Locale;
 import java.util.Stack;
 
 public class ChunWon {
 
     public static void main(String[] args) {
-        String solve = solve2(new BigInteger("10000000000000000000"));
+        String solve = solve(new BigInteger("100"));
         System.out.println(solve);
     }
 
-    private static String solve2(BigInteger numb) {
+    private static String solve3(BigInteger numb) {
+        Format formatter = new DecimalFormat("###,###");
+        //        NumberFormat.getInstance(Locale.KOREA).format();
+        return formatter.format(numb.intValue());
+    }
+
+
+        private static String solve2(BigInteger numb) {
         char[] chars = numb.toString().toCharArray();
         int count = 0;
         StringBuilder sb = new StringBuilder();
