@@ -15,14 +15,22 @@ public class ChunWon {
         System.out.println(solve);
     }
 
+    //
+    // 100 에러처리
+    // % 연산을 이용해서
+    private static String solve4(BigInteger numb) {
+
+
+        return "";
+    }
+
     private static String solve3(BigInteger numb) {
         Format formatter = new DecimalFormat("###,###");
         //        NumberFormat.getInstance(Locale.KOREA).format();
         return formatter.format(numb.intValue());
     }
 
-
-        private static String solve2(BigInteger numb) {
+    private static String solve2(BigInteger numb) {
         char[] chars = numb.toString().toCharArray();
         int count = 0;
         StringBuilder sb = new StringBuilder();
@@ -64,4 +72,5 @@ public class ChunWon {
         }
         return sb.toString();
     }
+
 }
